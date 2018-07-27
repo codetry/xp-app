@@ -1,0 +1,22 @@
+<div *ngIf="loadingPr" class="loading">
+  <i class="fa fa-spinner fa-pulse fa-3x fa-fw"></i>
+  <span class="sr-only">Loading...</span>
+</div><!-- .loading -->
+
+<div class="card-columns">
+  <div class="card" *ngFor="let p of poemonMostrar let i =index">
+      <div class="wrap-card">
+      <img class="card-img-top" [src]="p.sprites.front_default" alt="Card image cap">
+      <div class="card-body">
+        <h5 class="card-title">{{p.name}}</h5>
+        <button type="button" (click)="verPokemon(i)" class="btn btn-outline-primary btn-block">
+          Detalhe
+        </button>
+      </div><!-- .card-body -->
+    </div><!-- .wrap-card -->
+  </div><!-- .card -->
+</div><!-- .card-columns -->
+
+<button type="button" *ngIf="poemonMostrar.length>0 && !loadingPr" (click)="getMorePokemnon()" class="btn btn-outline-primary btn-block">
+  Veja mais...
+</button>

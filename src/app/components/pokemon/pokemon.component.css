@@ -1,0 +1,22 @@
+.bold {
+  font-weight: bold;
+}
+.mov {
+  padding-top: 0px
+}
+.img {
+  width: 200px;
+  height: 200px
+}
+.btn-outline-danger {
+  border-radius: 0;
+  border-color: #000000;
+  color: #000000;
+}
+.btn-outline-danger:hover {
+  background-color: #000000;
+  color: #ffffff;
+}
+.table tbody tr {
+  background-color: #ccc;
+}

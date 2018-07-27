@@ -1,0 +1,29 @@
+.card {
+  width: 18rem;
+  border-radius: 0;
+  border-color: black;
+  padding: 5px;
+}
+.wrap-card {
+  background-color: #ccc;
+}
+.card-title {
+  text-align: center;
+  text-transform: uppercase;
+}
+.btn-outline-primary {
+  border-radius: 0;
+  border-color: #000000;
+  color: #000000;
+  cursor: pointer;
+}
+.btn-outline-primary:hover {
+  background-color: #000000;
+  color: #ffffff;
+}
+@media (min-width: 576px) {
+  .card-columns {
+    -webkit-column-gap: 8.25rem;
+    column-gap: 8.25rem;
+  }
+}
